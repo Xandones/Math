@@ -1,7 +1,7 @@
 #include <iostream>
 #include "FunctionsPrototypes.h"
 
-void main()
+int main()
 {
 	int Num1, Num2;
 
@@ -12,7 +12,7 @@ void main()
 	printf("%d + %d = %d\n", Num1, Num2, Sum(Num1, Num2));
 	printf("%d - %d = %d\n", Num1, Num2, Subtraction(Num1, Num2));
 	printf("%d X %d = %d\n", Num1, Num2, Multiplication(Num1, Num2));
-	std::cout << Num1 << " \ " << Num2 << " = " << Division(Num1, Num2) << "\n";
-	Potentiation(Num1, Num2);
+	printf("%d / %d = %.3f\n", Num1, Num2, Division((float)Num1, (float)Num2));
+	printf("%d ^ %d = %d\n", Num1, Num2, Potentiation(Num1, Num2));
 	SquareRoot(Num1, Num2);
 }

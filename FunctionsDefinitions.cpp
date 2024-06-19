@@ -28,16 +28,16 @@ float Division(int Num1, int Num2)
 	}
 	else
 	{
-		return Num1 / Num2;
+		return ((float)Num1 / (float)Num2);
 	}
 }
 
-void Potentiation(int Num1, int Num2)
+int Potentiation(int Num1, int Num2)
 {
-	printf("%d to the power of %d is %ld.\n", Num1, Num2, pow(Num1, Num2));
+	return pow((double)Num1, (double)Num2);
 }
 
 void SquareRoot(int Num1, int Num2)
 {
-	printf("The square root of %d is %.3f and square root of %d is %.3f.\n", Num1, sqrt(Num1), Num2, sqrt(Num2));
+	printf("The square root of %d is %.3f \n The square root of %d is %.3f.\n", Num1, sqrt(Num1), Num2, sqrt(Num2));
 }
