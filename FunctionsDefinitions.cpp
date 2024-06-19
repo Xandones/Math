@@ -39,5 +39,5 @@ int Potentiation(int Num1, int Num2)
 
 void SquareRoot(int Num1, int Num2)
 {
-	printf("The square root of %d is %.3f \n The square root of %d is %.3f.\n", Num1, sqrt(Num1), Num2, sqrt(Num2));
+	printf("The square root of %d is %.3f \nThe square root of %d is %.3f.\n", Num1, sqrt(Num1), Num2, sqrt(Num2));
 }
