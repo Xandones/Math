@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <cmath>
 #include <math.h>
 #include "FunctionsPrototypes.h"
 
@@ -18,7 +19,7 @@ int Multiplication(int Num1, int Num2)
 	return Num1 * Num2;
 }
 
-int Division(int Num1, int Num2)
+float Division(int Num1, int Num2)
 {
 	if (Num2 == 0)
 	{
@@ -33,17 +34,7 @@ int Division(int Num1, int Num2)
 
 void Potentiation(int Num1, int Num2)
 {
-	int Base = Num1;
-	int Exp = Num2;
-	long double Result = 1;
-
-	while (Exp != 0)
-	{
-		Result *= Base;
-		Exp--;
-	}
-
-	printf("%d to the power of %d is %f.\n", Base, Num2, Result);
+	printf("%d to the power of %d is %ld.\n", Num1, Num2, pow(Num1, Num2));
 }
 
 void SquareRoot(int Num1, int Num2)
