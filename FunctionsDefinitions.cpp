@@ -19,7 +19,7 @@ long long int Multiplication(long long int Num1, long long int Num2)
 	return Num1 * Num2;
 }
 
-long long int Division(long long int Num1, long long int Num2)
+double Division(double Num1, double Num2)
 {
 	if (Num2 == 0)
 	{
@@ -28,7 +28,7 @@ long long int Division(long long int Num1, long long int Num2)
 	}
 	else
 	{
-		return ((long long int)Num1 / (long long int)Num2);
+		return (Num1 / Num2);
 	}
 }
 
@@ -37,7 +37,7 @@ long long int Potentiation(long long int Num1, long long int Num2)
 	return pow((long long int)Num1, (long long int)Num2);
 }
 
-long long int SquareRoot(long long int Num1)
+double SquareRoot(long long int Num1)
 {
 	return sqrt(Num1);
 }
